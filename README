@@ -6,10 +6,16 @@
 
 by Hisham Muhammad <hisham@gobolinux.org> (2004 - 2016)
 
+memetop patches
+====
+
+by Kevin Orr
+
 Introduction
 ------------
 
-This is `htop`, an interactive process viewer.
+This is `memetop`, a fork of Hisham Muhammad's
+`htop`, an interactive process viewer.
 It requires `ncurses`. It is developed primarily on Linux,
 but we also have code for running under FreeBSD and Mac OS X
 (help and testing are wanted for these platforms!)
@@ -17,7 +23,19 @@ but we also have code for running under FreeBSD and Mac OS X
 This software has evolved considerably over the years,
 and is reasonably complete, but there is always room for improvement.
 
-Comparison between `htop` and classic `top`
+Comparison between `memetop` and classic `htop`
+-----------------------------------------------
+
+* In `htop`, percent memory usage is called `MEM%`, while in `memetop`
+  it is called `MEME%`.
+* All documentation is updated accordingly.
+* Continuous integration is run to make sure I didn't break anything
+  of Muhammad's when I essentially ran `sed` on his entire code base.
+* Since this is a fork of `htop` that maintains full backward compatibility
+  (as well as maintaining upstream merging), the name of the program remains
+  `htop`. Feel free to symlink it to `memetop` or even `maymaytop`.
+
+Comparison between classic `htop` and even classic-er `top`
 -------------------------------------------
 
 * In `htop` you can scroll the list vertically and horizontally
