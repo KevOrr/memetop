@@ -309,7 +309,7 @@ The user ID of the process owner.
 .B PERCENT_CPU (CPU%)
 The percentage of the CPU time that the process is currently using.
 .TP
-.B PERCENT_MEM (MEM%)
+.B PERCENT_MEM (MEME%)
 The percentage of memory the process is currently using (based on the process's
 resident memory size, see M_RESIDENT above).
 .TP

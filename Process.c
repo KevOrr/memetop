@@ -392,7 +392,7 @@ void Process_writeField(Process* this, RichString* str, ProcessField field) {
       if (this->percent_mem > 99.9) {
          xSnprintf(buffer, n, "100. "); 
       } else {
-         xSnprintf(buffer, n, "%4.1f ", this->percent_mem);
+         xSnprintf(buffer, n, "%5.1f ", this->percent_mem);
       }
       break;
    }
